@@ -433,19 +433,19 @@ var versions = [
 	},
 ];
 
-google.charts.load( 'current', { 'packages': [ 'line' ] } );
+google.charts.load( "current", { "packages": [ "line" ] } );
 google.charts.setOnLoadCallback( drawChart );
 
 function drawChart() {
 	var data = new google.visualization.DataTable();
 
-	data.addColumn('string', 'Version');
-	data.addColumn('number', 'react.js');
-	data.addColumn('number', 'react.js.gz');
-	data.addColumn('number', 'react.min.js');
-	data.addColumn('number', 'react.min.js.gz');
-	data.addColumn('number', 'react-dom.js');
-	data.addColumn('number', 'react-dom.min.js');
+	data.addColumn("string", "Version");
+	data.addColumn("number", "react.js");
+	data.addColumn("number", "react.js.gz");
+	data.addColumn("number", "react.min.js");
+	data.addColumn("number", "react.min.js.gz");
+	data.addColumn("number", "react-dom.js");
+	data.addColumn("number", "react-dom.min.js");
 
 	data.addRows(
 		_.map( versions, function( version ) {
@@ -464,12 +464,12 @@ function drawChart() {
 	var options = {
 		chart: {
 			title: "React File Size",
-			subtitle: 'in Kilobytes (kB)'
+			subtitle: "in Kilobytes (kB)"
 		},
 		height: 600
 	};
 
-	var chart = new google.charts.Line( document.getElementById( 'linechart_material' ) );
+	var chart = new google.charts.Line( document.getElementById( "linechart_material" ) );
 
 	chart.draw( data, options );
 }

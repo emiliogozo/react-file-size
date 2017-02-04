@@ -42,7 +42,7 @@ const defaults = {
 
 function getStubs( options ) {
 	return merge( {}, defaults, options );
-};
+}
 
 describe( "Index", () => {
 	describe( "createFolder", () => {
@@ -113,7 +113,7 @@ describe( "Index", () => {
 				{ name: "react.min.js", version: "1.0.0", size: 12, sizeGzipped: 10 },
 				{ name: "react.js", version: "2.0.0", size: 234, sizeGzipped: 230 },
 				{ name: "react.min.js", version: "2.0.0", size: 23, sizeGzipped: 20 }
-			]
+			];
 			const reactDomStats = [
 				{ name: "react-dom.js", version: "1.0.0", size: 123, sizeGzipped: 120 },
 				{ name: "react-dom.min.js", version: "1.0.0", size: 12, sizeGzipped: 10 },
@@ -146,9 +146,9 @@ describe( "Index", () => {
 		it( "should default to zero bytes if size is undefined", () => {
 			const versions = [ "1.0.0", "2.0.0" ];
 			const reactStats = [
-				{ name: "react.js", version: "1.0.0"  },
+				{ name: "react.js", version: "1.0.0" },
 				{ name: "react.js", version: "2.0.0" },
-			]
+			];
 			const reactDomStats = [
 			];
 			const stats = mapStats( versions, reactStats, reactDomStats );

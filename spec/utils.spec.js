@@ -36,7 +36,7 @@ const defaults = {
 
 function getStubs( options ) {
 	return merge( {}, defaults, options );
-};
+}
 
 describe( "Utils", () => {
 	describe( "scrapeVersions", () => {
