@@ -6,7 +6,8 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "test": "mocha"
+    "start": "node index.js",
+    "test": "mocha spec/ --require babel-register"
   },
   "repository": {
     "type": "git",
